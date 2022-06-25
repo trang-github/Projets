@@ -1,0 +1,249 @@
+body {
+  color: #000;
+  background-color: #eee;
+  margin: 0;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+figure {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+input, textarea, select {
+  display: block;
+  width: 100%;
+}
+input[type=text], input[type=password] {
+  height: 30px;
+}
+input[type="radio"] {
+  display: inline-block;
+  width: initial;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+.container-flex {
+  display: flex;
+}
+.btn {
+  font-size: 16px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+.btn-sm {
+  font-size: 14px;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.hide {
+  display: none!important;
+}
+.readonly {
+  pointer-events: none;
+}
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+
+#main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#main_container .container-inner {
+  width: 60%;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 7px #a09797;
+}
+
+/** header */
+header {
+  margin-bottom: 30px;
+}
+header .header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+header .welcome-text {
+  text-align: center;
+  margin-top: 0;
+}
+header .logo img {
+  width: 80px;
+  height: 80px;
+}
+/** header */
+
+
+/** index */
+main .site-description {
+  text-align: center;
+}
+main .vote {
+  display: block;
+  font-size: 24px;
+  margin: 0 auto;
+  padding: 25px 45px;
+}
+main .button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  column-gap: 20px;
+}
+/** index */
+
+/** login */
+.login-form {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+.login-form .login {
+  margin-top: 10px;
+}
+.login-form input {
+  margin-bottom: 10px;
+}
+/** login */
+
+/** ballot */
+.sidebar {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+.sidebar .create-ballot,
+.sidebar .vote-own,
+.sidebar .view-rate,
+.sidebar .close-ballot {
+  width: 100%;
+}
+.sidebar .vote-own,
+.sidebar .view-rate,
+.sidebar .close-ballot,
+.top-margin {
+  margin-top: 50px;
+}
+.sidebar .sidebar-buttons {
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+}
+
+.new-ballot-form, .vote-form {
+  width: 75%;
+}
+.voters-label {
+  display: flex;
+  justify-content: space-between;
+}
+.voters-label select {
+  width: 150px;
+}
+.answer, .new-answer {
+  display: flex;
+}
+.answer button,
+.new-answer button {
+  padding: 0;
+  margin: 0;
+  width: 70px;
+  height: 30px;
+}
+.voter-list {
+  height: 210px;
+  overflow-y: auto;
+}
+.voter, .new-voter {
+  display: flex;
+}
+.voter button,
+.new-voter button {
+  padding: 0;
+  margin: 0;
+  width: 70px;
+  height: 30px;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 150px;
+}
+.new-voter button {
+  width: 100%;
+}
+/** ballot */
+
+/** select ballot */
+.ballots-selection-form {
+  width: 40%;
+  margin: 0 auto;
+}
+/** select ballot */
+
+/** vote page*/
+.vote-container {
+  display: flex;
+  justify-content: center;
+}
+.select_answer_block {
+  border: 1px solid rgb(118, 118, 118);
+  border-radius: 3px;
+  flex-direction: column;
+  place-content: center flex-start;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+/** vote page*/
+
+button.disabled {
+  border: 1px solid #aaa;
+  color: #aaa;
+}
+
+.vote-own-label {
+  color: green;
+}
+
+.green_text {
+  color: green;
+}
+
+.red_text {
+  color: red;
+}
+
+#current_user_info {
+  position: fixed;
+  right: 0px;
+}
+
+#current_user_info p, #current_user_info a {
+  margin: 8px;
+}
+#current_user_info a {
+  text-decoration: underline;
+  color: blue;
+}
+#current_user_info a:hover {
+  cursor: pointer;
+}
